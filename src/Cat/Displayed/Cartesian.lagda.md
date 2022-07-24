@@ -30,6 +30,7 @@ record Cartesian-lift {x y} (f : Hom x y) (y′ : Ob[ y ]) : Type (o ⊔ ℓ ⊔
     {x′}      : Ob[ x ]
     lifting   : Hom[ f ] x′ y′
     cartesian : Cartesian f lifting
+  open Cartesian cartesian public
 ```
 
 ```agda
